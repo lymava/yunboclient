@@ -44,8 +44,8 @@ public class YunboMain {
 //		 String list_movie_pubConlumn = list_movie_pubConlumn();
 //		 System.out.println(list_movie_pubConlumn);
 		 //发布视频资源
-		 String publish_movie_resouce = publish_movie_resouce();
-		 System.out.println(publish_movie_resouce);
+//		 String publish_movie_resouce = publish_movie_resouce();
+//		 System.out.println(publish_movie_resouce);
 		 //我发布视频资源
 //		 String list_my_movieResouce = list_my_movieResouce();
 //		 System.out.println(list_my_movieResouce);
@@ -65,8 +65,8 @@ public class YunboMain {
 //		 String list_fengyun = list_fengyun();
 //		 System.out.println(list_fengyun);
 		//获取下载链接
-//		 String movie_resouce_get_downloadLink = movie_resouce_get_downloadLink();
-//		 System.out.println(movie_resouce_get_downloadLink);
+		 String movie_resouce_get_downloadLink = movie_resouce_get_downloadLink();
+		 System.out.println(movie_resouce_get_downloadLink);
 	}
 	/**
 	 * 获取下载链接
@@ -79,7 +79,7 @@ public class YunboMain {
 		 
 		JsonObject jsonObject = new JsonObject();
 		
-		jsonObject.addProperty("movieResouce_id", "58498636ef70d120941161e3");//视频资源的系统编号
+		jsonObject.addProperty("movieResouce_id", "5849ff1d7ea6a975d9df7df3");//视频资源的系统编号
 		String send_user_data = send_user_data(urlString, jsonObject.toString());
 		return send_user_data;
 	}
@@ -196,7 +196,7 @@ public class YunboMain {
 
 			String urlString = baseUrl + "face/user/publish_movie_resouce.do";
 			
-			String filePath = "/home/lymava/下载/门店信息.jpg";
+			String filePath = "/home/lymava/下载/首页.jpg";
 			
 			JsonObject jsonObject = new JsonObject();
 			
