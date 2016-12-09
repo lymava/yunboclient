@@ -65,8 +65,8 @@ public class YunboMain {
 //		 String list_fengyun = list_fengyun();
 //		 System.out.println(list_fengyun);
 		//获取下载链接
-		 String movie_resouce_get_downloadLink = movie_resouce_get_downloadLink();
-		 System.out.println(movie_resouce_get_downloadLink);
+//		 String movie_resouce_get_downloadLink = movie_resouce_get_downloadLink();
+//		 System.out.println(movie_resouce_get_downloadLink);
 	}
 	/**
 	 * 获取下载链接
@@ -196,23 +196,22 @@ public class YunboMain {
 
 			String urlString = baseUrl + "face/user/publish_movie_resouce.do";
 			
-			String filePath = "/home/lymava/下载/首页.jpg";
+			String filePath = "/home/lymava/下载/aaa.flv";
 			
 			JsonObject jsonObject = new JsonObject();
 			
-			jsonObject.addProperty("name", "新的");
+			jsonObject.addProperty("name", "德仁");
 			jsonObject.addProperty("file_size", "2012321564737");//资源大小-字节
-			jsonObject.addProperty("file_type", "mp4");
+			jsonObject.addProperty("file_type", "flv");
 			jsonObject.addProperty("price_fen", "1");
 			jsonObject.addProperty("hash", Md5Util.md5File(filePath));
 			jsonObject.addProperty("intro", "视频资源简介");
 			jsonObject.addProperty("pubConlumnId", "58228ed2ef722c27e2824f2a");//list_movie_pubConlumn 获取的
 			
-			byte[] readByte = IOUtil.readByte("/home/lymava/workhome/program/云播/云播 -10.21/logo/1024 拷贝.png");
+//			byte[] readByte = IOUtil.readByte(filePath);
+//			String encodeHexString = HexM.encodeHexString(readByte);
 			
-			String encodeHexString = HexM.encodeHexString(readByte);
-			
-			jsonObject.addProperty("pic","<file>"+encodeHexString+"</file>");
+			jsonObject.addProperty("pic","<file>tetst</file>");
 
 			String send_user_data = send_user_data(urlString, jsonObject.toString());
 

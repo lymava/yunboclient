@@ -12,6 +12,17 @@
  * rootPubConlumnId	5822890fef722c27e2824f23 //固定 视频根目录类别编号
  * pubConlumnId		视频分类别编号
  * 
+ * 	//正常
+	public static final Integer state_nomal = 						1;
+	//异常
+	public static final Integer state_false = 						2;
+	//回收站
+	public static final Integer state_huishouzhan = 				3;
+	//删除
+	public static final Integer state_delete_ondisk = 				4;
+	//上传资源
+	public static final Integer state_shangchuanziyuan = 			11;
+ * 
  */
 // 返回样例 {"statusCode":"300","message":"错误原因！"}//错误
 // 返回结果
