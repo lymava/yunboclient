@@ -23,7 +23,8 @@
 var result = {
 		"data" : {
 			"upload_token" : "EUn-dgIW2NU8-Idg9PdgxIKX6VRQhTFdxeFU4Ub-:L7h1K_mzYN62EXfO3UhTxTAFMnY=:eyJzY29wZSI6Inl1bmJvIiwiY2FsbGJhY2tVcmwiOiIvcWluaXVfdXBsb2FkX2NhbGxfYmFjay5qc3AiLCJkZWFkbGluZSI6MTQ4MTIxNTMyMSwiY2FsbGJhY2tCb2R5IjoibW92aWVSZXNvdWNlX2lkXHUwMDNkNTg0OTdmNDllZjcwZDExOWIyNWRlMTQ5In0=",//文件上传的token
-			"upload_name" : "5feb4be117e1ff6430fd947585a35e17"//文件上传的名称
+			"upload_name" : "5feb4be117e1ff6430fd947585a35e17",//文件上传的名称
+			"movieResouce_id":"1232e117e1ff6430fd947585a35e17"//视频资源的系统编号
 		},
 		"statusCode" : "200",
 		"message" : "资源发布成功！"
